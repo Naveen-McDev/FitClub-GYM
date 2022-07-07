@@ -1,0 +1,275 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h {
+    padding: 24px 32px 32px 32px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.the-best-ad {
+    margin-top: 64px;
+    background-color: #363d42;
+    border-radius: 64px;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.the-best-ad span {
+    z-index: 2;
+}
+
+.the-best-ad div {
+    position: absolute;
+    background-color: var(--orange);
+    width: 86px;
+    height: 80%;
+    left: 8px;
+    border-radius: 48px;
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.hero-text div:nth-of-type(3) {
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.figures {
+    display: flex;
+    gap: 32px;
+}
+
+.figures div {
+    display: flex;
+    flex-direction: column;
+}
+
+.figures div span:nth-of-type(1) {
+    color: white;
+    font-size: 32px;
+}
+
+.figures div span:nth-of-type(2) {
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    font-weight: normal;
+}
+
+.hero-buttons :nth-child(1) {
+    color: white;
+    background-color: var(--orange);
+    width: 128px;
+}
+
+.hero-buttons :nth-child(2) {
+    color: white;
+    background-color: transparent;
+    width: 128px;
+    border: 2px solid var(--orange);
+}
+
+.right-h {
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+.right-h .btn {
+    position: absolute;
+    right: 48px;
+    top: 32px;
+    color: black;
+}
+
+.heart-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 16px;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 64px;
+    top: 112px;
+}
+
+.heart-rate :nth-child(1) {
+    width: 32px;
+}
+
+.heart-rate :nth-child(2) {
+    color: var(--gray);
+}
+
+.heart-rate :nth-child(3) {
+    color: white;
+    font-size: 24px;
+}
+
+.hero-image {
+    position: absolute;
+    width: 368px;
+    top: 160px;
+    right: 128px;
+}
+
+.hero-image-back {
+    position: absolute;
+    top: 64px;
+    right: 320px;
+    z-index: -1;
+    width: 240px;
+}
+
+.calories {
+    display: flex;
+    gap: 32px;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 16px;
+    width: fit-content;
+    position: absolute;
+    top: 512px;
+    right: 448px;
+}
+
+.calories img {
+    width: 48px;
+}
+
+.calories div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories div :nth-child(1) {
+    color: var(--gray);
+}
+
+.calories div :nth-child(2) {
+    color: white;
+    font-size: 24px;
+}
+
+.hero-blur {
+    width: 352px;
+    height: 480px;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur {
+        width: 224px;
+    }
+
+    .the-best-ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .figures > div >span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures > div >span:nth-of-type(2) {
+        font-size: small;
+    }
+
+    .right-h {
+        position: relative;
+        background: none;
+    }
+
+    .heart-rate {
+        left: 16px;
+        top: 32px;
+    }
+
+    .calories {
+        position: relative;
+        top: 80px;
+        left: 32px;
+    }
+
+    .calories>img {
+        width: 32px;
+    }
+
+    .calories > div > :nth-child(2) {
+        color: white;
+        font-size: 16px;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 240px;
+        top: 64px;
+        left: 112px;
+        align-self: center;
+    }
+
+    .hero-image-back {
+        width: 240px;
+        left: 32px;
+        top: 0;
+    }
+
+
+
+}
